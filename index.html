@@ -1,14 +1,142 @@
 <!DOCTYPE html>
 <html lang="uk">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Посмішка</title>
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
+
 <body>
     <header>
-        <h1>Стоматологічна клініка "Посмішка"</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#about-us">Про нас</a></li>
+                <li><a href="#why-we">Чому ми</a></li>
+                <li><a href="#record">Запис на прийом</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <section id="home">
+        <img src="photo/main-header-foto.gif" alt="main photo of webpage">
+        <img src="photo/logotype.gif" alt="logotype">
+        <h1>Стоматологічна клініка "Посмішка"</h1>
+        <a href="https://www.instagram.com/"><img src="photo/instagram.gif" alt="instagram link"></a>
+        <a href="https://www.facebook.com"><img src="photo/facebook.gif" alt="facebook link"></a>
+        <h4>Зробимо Ваші зуби сильнішими та білішими за Ваші гроші</h4>
+    </section>
+
+    <section id="about-us">
+        <h2 class="main">Про клініку</h2>
+        <p>Стоматологічна клініка "Посмішка" рада вітати Вас на нашму сайті. На ринку ми з 2010 року відколи встигли вже зібрати велику кількість постійних клієнтів. Якщо бажаєте якісного обслуговування Вашої ротової порожнини, то завітайте до нас. Завдяки
+            високотехнологічним приладам ми забезпечуємо гарантію на три роки після повної діагности Ваших зубів. У нас є всі необхідні лікарі та необхідне обладнання, щоб вилікувати будь-яке захворювання зубів та ясен.</p>
+        <img src="photo/about-us.gif" alt="about us">
+    </section>
+
+    <section id="why-we">
+        <h2 class="main">Чому варто обрати нас?</h2>
+        <div id="benefits">
+            <div>
+                <h5>Широкий спектр послуг</h5>
+                <p>Надаємо весь спектр стоматологічних послуг в тому числі: відбілювання, профілактична гігієна, пломбування протезування</p>
+            </div>
+            <div>
+                <h5>Наші ціни доступні кожній людині</h5>
+                <p>Про вартість можете запитати за номером телефону</p>
+            </div>
+            <div>
+                <h5>Індивідуальний підхід до кожного пацієнта</h5>
+                <p>Зробимо все якнайкраще для Вас, аби Вам було комфортно та почували себе як вдома</p>
+            </div>
+            <div>
+                <h5>Прийом без очікування</h5>
+                <p>Наш адміністратор складає графік лікаря із запасом, томусколи Ви приходите в зазначений час, то одразу потрапляєте на прийом</p>
+            </div>
+            <div>
+                <h5>Наша клініка має зручне розташування</h5>
+                <p>Знаходиться недалеко від центру, біля клініки парковка, кафе де можна смачно поїсти</p>
+            </div>
+            <div>
+                <h5>Безпечне лікування</h5>
+                <p>Виключена вірогідність попадання інфекції, тому що ми використовуємо сучасну 5-ти етапну методику стерилізації, яка відповідає світовим стандартам</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="record">
+        <h2 class="main">Запис на прийом</h2>
+        <img src="photo/record.gif" alt="Запис на прийом">
+        <br>
+        <form method="POST" action="https://formspree.io/cherk.v8@gmail.com">
+            <label>Ваше ім’я:
+        <input type="text" name="client-first-name" required>
+        <br>
+        </label>
+            <label>Прізвище:
+        <input type="text" name="client-last-name" required>
+        </label>
+            <br>
+            <label>E-mail:
+        <input type="email" name="client-email" required>
+        </label>
+            <br>
+            <label>Номер телефону:
+        <input type="text" name="client-phone-number" pattern="0[\d]{2}-[\d]{2}-[\d]{2}-[\d]{3}" title="0xx-xx-xx-xxx" placeholder="0xx-xx-xx-xxx" required>
+        </label>
+            <br>
+            <label>Бажана дата:
+        <input type="date" name="client-date" required>
+        </label>
+            <br>
+            <label>Зручний час:
+        <input type="time" name="client-time" required>
+        </label>
+            <br>
+            <input type="submit" value="Надіслати">
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2 class="main">Контакти</h2>
+        <div id="methods-of-contact">
+            <div>
+                <h5>Графік роботи:</h5>
+                <p>ПД-ПТ 9:00-18:00 СБ 10:00-15:00</p>
+            </div>
+            <div>
+                <h5>Номер телефону:</h5>
+                <p>+380323495433 +380683333333 +380934542345</p>
+            </div>
+            <div>
+                <h5>E-mail:</h5>
+                <p>smile100@qmail.com</p>
+            </div>
+            <div>
+                <h5>Розташування:</h5>
+                <p>Львів, вул. Зелена 135</p>
+            </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12244.161251858986!2d24.050636173882676!3d49.82333015746422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add5504303b8d%3A0x91c508ea67c156af!2z0LLRg9C70LjRhtGPINCX0LXQu9C10L3QsCwgMTM1LCDQm9GM0LLRltCyLCDQm9GM0LLRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDc5MDAw!5e0!3m2!1suk!2sua!4v1519334910902" width="980" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+
+    <footer>
+        <p>Ми в соціальних мережах:</p>
+        <a href="https://www.instagram.com/"><img src="photo/footer-instagram.gif" alt="Посилання на інстаграм1"></a>
+        <a href="https://www.facebook.com"><img src="photo/footer-facebook.gif" alt="Посилання на фейсбук1"></a>
+        <p>Copyright 2018</p>
+        <p>Design by Cherkavskyi V.</p>
+    </footer>
 </body>
+
 </html>
