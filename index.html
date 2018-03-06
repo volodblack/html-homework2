@@ -31,14 +31,14 @@
 
     <section id="home">
         <div class="mainphoto">
-            <img src="photo/main-header-foto.gif" alt="main photo of webpage">
-            <div class="topleft">
+            <img src="photo/main-header-photo.gif" alt="main photo of webpage">
+            <div class="cliniclogotype">
                 <img src="photo/logotype.gif" alt="logotype">
             </div>
             <div class="name">
                 <h1>Стоматологічна клініка <br>"Посмішка"</h1>
             </div>
-            <div class="topright">
+            <div class="link">
                 <a href="https://www.facebook.com"><img src="photo/facebook.png" alt="facebook link"></a>
                 <a href="https://www.instagram.com/"><img src="photo/instagram.png" alt="instagram link"></a>
             </div>
@@ -119,31 +119,30 @@
 
             <div id="recordform">
                 <form method="POST" action="https://formspree.io/cherk.v8@gmail.com">
-                    <label> Ваше ім’я:
-        <input type="text" name="client-first-name" required>
-        </label>
-                    <br><br>
-                    <label>Прізвище:
-        <input type="text" name="client-last-name" required>
-        </label>
-                    <br><br>
-                    <label>E-mail:
-        <input type="email" name="client-email" required>
-        </label>
-                    <br><br>
-                    <label>Номер телефону:
-        <input type="text" name="client-phone-number" pattern="0[\d]{2}-[\d]{2}-[\d]{2}-[\d]{3}" title="0xx-xx-xx-xxx" placeholder="0xx-xx-xx-xxx" required>
-        </label>
-                    <br><br>
-                    <label>Бажана дата:
-        <input type="date" name="client-date" required>
-        </label>
-                    <br><br>
-                    <label>Зручний час:
-        <input type="time" name="client-time" required>
-        </label>
-                    <br><br>
-                    <input type="submit" value="Надіслати">
+                    <label for="client-first-name"> Ваше ім’я: </label>
+                    <input type="text" name="client-first-name" placeholder=" Ігор" required>
+        
+                    <br>
+                    <label for="client-last-name">Прізвище: </label>
+                    <input type="text" name="client-last-name" placeholder=" Іванов" required>
+        
+                    <br>
+                    <label for="client-email">E-mail:</label>
+                    <input type="email" name="client-email" placeholder=" ihor@ivanov.com" required>
+        
+                    <br>
+                    <label for ="client-phone-number"> Номер телефону: </label>
+                    <input type="text" name="client-phone-number" pattern="0[\d]{2}-[\d]{2}-[\d]{2}-[\d]{3}" title="0xx-xx-xx-xxx" placeholder=" 0xx-xx-xx-xxx" required>
+       
+                    <br>
+                    <label for ="client-date">Бажана дата:</label>
+                    <input type="date" name="client-date" required>
+        
+                    <br>
+                    <label for ="client-time">Зручний час:</label>
+                    <input type="time" name="client-time" required>
+        
+                    <input type="submit" value="Надіслати" id ="button">
                 </form>
             </div>
         </div>
@@ -174,18 +173,22 @@
             </div>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12244.161251858986!2d24.050636173882676!3d49.82333015746422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add5504303b8d%3A0x91c508ea67c156af!2z0LLRg9C70LjRhtGPINCX0LXQu9C10L3QsCwgMTM1LCDQm9GM0LLRltCyLCDQm9GM0LLRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDc5MDAw!5e0!3m2!1suk!2sua!4v1519334910902"
-            width="980" height="450" style="border:0" allowfullscreen></iframe>
+          style="border:0" allowfullscreen></iframe>
     </section>
 
-    <footer>
+   <footer>
         <div>
             <p>Ми в соціальних мережах:
                 <a href="https://www.instagram.com/"><img src="photo/instagram-footer.png" alt="Посилання на інстаграм1"></a>
                 <a href="https://www.facebook.com"><img src="photo/facebook-footer.png" alt="Посилання на фейсбук1"></a>
             </p>
         </div>
-        <p>Copyright 2018 <img src="photo/smile.png" alt ="smile icon"></p>
-        <p>Design by Cherkavs’kyi V.</p>
+        <div>     
+            <p id ="copyright">Copyright 2018 <img src="photo/smile.png" alt ="smile icon"></p>
+        </div>    
+        <div>  
+            <p id ="design">Design by Cherkavs’kyi V.</p>
+        </div>
     </footer>
 </body>
 
