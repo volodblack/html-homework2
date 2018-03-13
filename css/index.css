@@ -3,9 +3,6 @@ body {
     margin: auto;
     background: url(../photo/back-photo.jpg);
     background-attachment: fixed;
-    border: 1px solid;
-    border-radius: 8px;
-    border-color: #20840f;
 }
 header, section, footer {
     background-color: white;
@@ -385,4 +382,10 @@ footer {
     #clinic {
         display: block;
     }
+}
+.btn-secondary {
+    background-color: #42a01c;
+}
+#button:hover {
+    background-color: #6c757d;
 }
