@@ -165,6 +165,8 @@ h4 {
 #about-us-photo {
     grid-column: 2/3;
     grid-row: 1/2;
+    display: flex;
+    align-items: center;
 }
 #about-us-text {
     grid-column: 1/2;
@@ -228,17 +230,18 @@ h4 {
 #recordphoto {
     grid-column: 1/2;
     grid-row: 1/2;
+    display: flex;
+    align-items: center;
 }
 #recordform {
     grid-column: 2/3;
     grid-row: 1/2;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
 }
 form {
     display: grid;
-    grid-template-columns: 170px 1fr;
+    grid-template-columns: 46% 54%;;
     grid-template-rows: 1fr;
-    margin-top: 25px;
 }
 input {
     grid-column: 2/3;
@@ -250,9 +253,7 @@ input {
 }
 label {
     grid-column: 1/2;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 30px;
+    margin-right: 10px;
     font-family: 'Georgia', serif;
     font-style: italic;
     margin-bottom: 0;
@@ -271,6 +272,7 @@ label {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     text-align: center;
+    font-size: 12px;
 }
 #clinic div:hover {
     background: #ecefed;
